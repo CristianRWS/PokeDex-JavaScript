@@ -1,0 +1,210 @@
+body {
+	background: #EFEFBB;
+	background: linear-gradient(to right, rgb(151, 224, 253), rgb(235, 122, 220));
+	color: white;
+	margin: 0;
+	font-family: rubik;
+}
+
+.container {
+	padding: 40px;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 54px;
+}
+
+.pokedex {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 20px;
+	padding-inline-start: 0;
+}
+
+.card {
+	list-style: none;
+	padding: 40px;
+	color: #222;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+	n
+}
+
+.card::after {
+	content: "";
+  display: block;
+  width: 50%;
+  height: 45%;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: .7;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+.steel {
+	background-color: #dddddd;
+}
+
+.fire {
+	background-color: #ff9a60;
+}
+
+.grass {
+	background-color: #b2fab7;
+}
+
+.electric {
+	background-color: #f1f886;
+}
+
+.water, .ice {
+	background-color: #b4e5fc;
+}
+
+.ground {
+	background-color: #d8c1ab;
+}
+
+.rock {
+	background-color: #b9b8a9;
+}
+
+.fairy {
+	background-color: #f5cefc;
+}
+
+.poison {
+	background-color: #7ecc8e;
+}
+
+.bug {
+	background-color: #f8d5a3;
+}
+
+.dragon {
+	background-color: #7c9bb8;
+	color: white;
+}
+
+.psychic {
+	background-color: #b256f0;
+	color: white;
+}
+
+.flying {
+	background-color: #F5F5F5;
+}
+
+.fighting {
+	background-color: #dd9a9a;
+}
+
+
+.ghost {
+	background-color: rgb(90, 90, 90);
+	color: white;
+}
+
+.normal {
+	background-color: #fbfce5;
+}
+
+.card:hover {
+	animation: bounce 0.5s linear;
+}
+
+.card-title {
+	text-transform: capitalize;
+	margin-bottom: 0px;
+	font-size: 32px;
+	font-weight: normal;
+	position: relative;
+	z-index: 2;
+}
+
+.card-subtitle {
+	margin-top: 5px;
+	color: #666;
+	font-weight: lighter;
+	position: relative;
+	z-index: 2;
+}
+
+.card-image {
+	height: 180px;
+	position: relative;
+	z-index: 2;
+}
+#source {
+	font-size: 20px;
+	text-align: center;
+	align-self: center;
+
+}
+
+#myBtn {
+	display: none;
+	position: fixed; /* Fixed/sticky position */
+	bottom: 112px; /* Place the button at the bottom of the page */
+	right: 20px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: rgb(89, 207, 243); /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding-top: 3px; /* Some padding */
+	padding-left: 6px;
+	padding-right: 6px;
+	border-radius: 50%; /* Rounded corners */
+	font-size: 30px; /* Increase font size */
+	font-weight: bold;
+	height: 42px;
+  }
+
+  #myBtn2 {
+	display: none;
+	position: fixed; /* Fixed/sticky position */
+	bottom: 60px; /* Place the button at the bottom of the page */
+	right: 20px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: rgb(243, 89, 89); /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding-top: 8px;
+	padding-bottom: 0px;
+	padding-left: 6px;
+	padding-right: 6px;
+	border-radius: 50%; /* Rounded corners */
+	font-size: 30px; /* Increase font size */
+	font-weight: bold;
+	height: 42px;
+  }
+  
+  #myBtn:hover {
+	background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+@keyframes bounce {
+	20% {
+			transform: translateY(-6px);
+	}
+	40% {
+			transform: translateY(0px);
+	}
+
+	80% {
+			transform: translateY(-2px);
+	}
+	100% {
+			transform: translateY(0);
+	}
+}
+
